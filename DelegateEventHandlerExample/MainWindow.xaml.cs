@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-/* This is a delegate and event handler example
+/* This is a delegate and event handler example with two examples.
  * One example is of custom delegate and event handler. 
  * The other is of in-built delegate and event handler.
  * */
