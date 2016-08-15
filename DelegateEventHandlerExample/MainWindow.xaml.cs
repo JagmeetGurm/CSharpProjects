@@ -27,6 +27,7 @@ namespace DelegateEventHandlerExample
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }
