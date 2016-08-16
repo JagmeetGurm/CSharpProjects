@@ -29,10 +29,14 @@ namespace DelegateEventHandlerExample
             InitializeComponent();
             //delegate calling sumdel handler
             NumDelegate sumDel = new NumDelegate(CustomDelegate.sumOfNumbers);
-           txtSum.Text=( sumDel(4, 5)).ToString();
+        //   txtSum.Text=( sumDel(4, 5)).ToString();
             //delegate calling proddel handler
             NumDelegate prodDel = new NumDelegate(CustomDelegate.prodOfNumbers);
             txtProduct.Text = (prodDel(4, 5)).ToString();
+            CustomDelegate.eventNum += new NumDelegate(CustomDelegate.sumOfNumbers);
+            //txtSum.Text = (CustomDelegate.eventNum(4,5)).ToString();
+            CustomDelegate.callEvent();
+            txtSum.Text = CustomDelegate.retSum.ToString();
         }
     }
 }

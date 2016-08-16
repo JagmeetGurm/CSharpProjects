@@ -10,15 +10,22 @@ namespace DelegateEventHandlerExample
     class CustomDelegate
     {
         //custom event of sumDelegate type.
-        public event NumDelegate   eventNum;
+        public static event NumDelegate eventNum;
 
-//delegate method handler
-public static int sumOfNumbers(int a, int b)
+        //delegate method handler
+        public static int sumOfNumbers(int a, int b)
         {
             return a + b;
         }
         //anohter delegate method handler
         public static int prodOfNumbers(int a, int b)
         { return a * b; }
+        public static int callEvent(int a = 40, int b = 5)
+        {
+            retSum = ( eventNum(a, b));
+            return 0;
+
+        }
+        public static int retSum;
     }
 }
