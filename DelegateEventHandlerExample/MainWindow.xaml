@@ -6,7 +6,15 @@
         xmlns:local="clr-namespace:DelegateEventHandlerExample"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid >
+
+        <WrapPanel  Margin="69,0,68.4,253.8" Width="381">
+            <Label x:Name="labelSum" Content="Sum"  Height="42" Width="112" />
+            <TextBlock x:Name="txtSum"  Margin="10" TextWrapping="Wrap"  Width="175" Height="41"/>
+        </WrapPanel>
+        <Label x:Name="labelProduct" Content="Product" HorizontalAlignment="Left" Margin="69,125,0,0" VerticalAlignment="Top" Width="78"/>
+        <TextBlock x:Name="txtProduct" HorizontalAlignment="Left" Margin="196,125,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="37" Width="117"/>
+
+
     </Grid>
 </Window>
