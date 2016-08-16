@@ -27,6 +27,18 @@ namespace DelegateEventHandlerExample
         public MainWindow()
         {
             InitializeComponent();
+          //  Button sumButton = new Button();
+      
+        }
+
+        private void buttonSum_Click(object sender, RoutedEventArgs e)
+        {
+
+            buttonSum.Click += new RoutedEventHandler(OnClickMe);
+        }
+        public void OnClickMe(object sender, RoutedEventArgs ea)
+        {
+            txtSum.Text = "I was pressed";
         }
     }
 }
