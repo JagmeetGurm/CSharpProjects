@@ -6,6 +6,7 @@
         <StackPanel>
             <ComboBox></ComboBox>
         <Button Click="Button_Click" Height="30"></Button>
+            <TextBox Text="This is a textbox in branch feature/add-combobox"></TextBox>
         </StackPanel>
     </Grid>
 </Window>
