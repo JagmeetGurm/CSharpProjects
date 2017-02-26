@@ -1,0 +1,1 @@
+c:\users\jagmeet\documents\visual studio 2013\Projects\WpfProject\WpfProject\bin\Debug\WpfProject.exe.config
