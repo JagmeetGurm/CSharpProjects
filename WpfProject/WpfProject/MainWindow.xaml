@@ -3,6 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Click="Button_Click" ></Button>   
+        <StackPanel>
+            <ComboBox></ComboBox>
+        <Button Click="Button_Click" Height="30"></Button>
+        </StackPanel>
     </Grid>
 </Window>
