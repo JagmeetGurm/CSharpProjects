@@ -6,6 +6,7 @@
         <StackPanel>
             <ComboBox></ComboBox>
         <Button Click="Button_Click" Height="30"></Button>
+            <TextBlock>This is a textBlock in Master branch</TextBlock>
         </StackPanel>
     </Grid>
 </Window>
