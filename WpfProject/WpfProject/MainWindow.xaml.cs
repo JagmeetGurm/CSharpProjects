@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -27,7 +28,17 @@ namespace WpfProject
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("you clicked me!");
+            var dialog = _dialogManager
+    .CreateProgressDialog("Progressing...", "Finished", DialogMode.Ok);
+            // We do some asynchronous work for 2 secs...
+            dialog.Show(() =>
+            {
+                for (var i = 0; i < 10; i++)
+                {
+                    Thread.Sleep(200);
+                    dialog.Progress += 10;
+                }
+            }); 
         }
     }
 }
